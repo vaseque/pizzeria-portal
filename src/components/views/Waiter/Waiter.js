@@ -8,8 +8,8 @@ const Waiter = () => {
   return (
     <div className={styles.component}>
       <h2>Waiter</h2>
-      <Link exact to={`${process.env.PUBLIC_URL}/waiter/order/new`}>New Order</Link> 
-      <Link exact to={`${process.env.PUBLIC_URL}/waiter/order/${id}`}>Order By Id</Link>
+      <Link to={`${process.env.PUBLIC_URL}/waiter/order/new`}>New Order</Link> 
+      <Link to={`${process.env.PUBLIC_URL}/waiter/order/${id}`}>Order By Id</Link>
     </div>
   );
 };

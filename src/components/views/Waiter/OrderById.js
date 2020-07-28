@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-//import styles from './OrderById.module.scss';
+import styles from './Waiter.module.scss';
 
 const OrderById = (props) => {
   const id = props.match.params.id;
   return (
-    <div>
+    <div className={styles.component}>
       <h2>OrderById</h2>
       {id}
     </div>

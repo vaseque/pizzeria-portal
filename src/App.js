@@ -21,14 +21,14 @@ function App() {
           <Route exact path={`${process.env.PUBLIC_URL}/`} component={Dashboard} />
           <Route exact path={`${process.env.PUBLIC_URL}/login`} component={Login} />
           <Route exact path={`${process.env.PUBLIC_URL}/tables`} component={Tables} />
-          <Route exact path={`${process.env.PUBLIC_URL}/tables/booking/:id`} component={BookingById} />
           <Route exact path={`${process.env.PUBLIC_URL}/tables/booking/new`} component={NewBooking} />
-          <Route exact path={`${process.env.PUBLIC_URL}/tables/events/:id`} component={EventsById} />
+          <Route exact path={`${process.env.PUBLIC_URL}/tables/booking/:id`} component={BookingById} />
           <Route exact path={`${process.env.PUBLIC_URL}/tables/events/new`} component={NewEvents} />
+          <Route exact path={`${process.env.PUBLIC_URL}/tables/events/:id`} component={EventsById} />
           <Route exact path={`${process.env.PUBLIC_URL}/waiter`} component={Waiter} />
-          <Route exact path={`${process.env.PUBLIC_URL}/waiter/order/:id`} component={OrderById} />
           <Route exact path={`${process.env.PUBLIC_URL}/waiter/order/new`} component={NewOrder} />
           <Route exact path={`${process.env.PUBLIC_URL}/kitchen`} component={Kitchen} />
+          <Route exact path={`${process.env.PUBLIC_URL}/waiter/order/:id`} component={OrderById} />
         </Switch>
       </MainLayout>
     </BrowserRouter>
